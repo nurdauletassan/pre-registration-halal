@@ -1,0 +1,144 @@
+.faq {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: #f9fafb;
+}
+
+.faq-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.faq-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.faq-description {
+  font-size: 1.4rem;
+  color: #4b5563;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.faq-grid {
+  display: grid;
+  gap: 1.7rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.faq-card {
+  background: white;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.faq-card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.faq-question {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.75rem;
+}
+
+.faq-answer {
+  font-size: 1.25rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+@media (min-width: 1024px) {
+  .faq-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .faq {
+    padding: 3rem 0;
+  }
+
+  .faq-container {
+    padding: 0 1rem;
+  }
+
+  .faq-header {
+    margin-bottom: 2rem;
+  }
+
+  .faq-title {
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+
+  .faq-description {
+    font-size: 1.125rem;
+    padding: 0 1rem;
+  }
+
+  .faq-grid {
+    gap: 1rem;
+  }
+
+  .faq-card {
+    padding: 1.5rem;
+  }
+
+  .faq-question {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .faq-answer {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq {
+    padding: 2rem 0;
+  }
+
+  .faq-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .faq-title {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
+  .faq-description {
+    font-size: 1rem;
+    max-width: 320px;
+  }
+
+  .faq-card {
+    padding: 1.25rem;
+  }
+
+  .faq-question {
+    font-size: 1.125rem;
+  }
+
+  .faq-answer {
+    font-size: 0.875rem;
+  }
+} 
