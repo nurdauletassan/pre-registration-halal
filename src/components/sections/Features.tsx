@@ -1,5 +1,5 @@
 import type { FC } from 'react'
-import { ZapIcon, ShieldIcon, CheckCircleIcon } from './icons'
+import { ZapIcon, ShieldIcon, CheckCircleIcon } from '../icons/icons'
 
 export const Features: FC = () => {
   return (
