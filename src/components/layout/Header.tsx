@@ -1,5 +1,5 @@
 
-import { ShieldIcon } from '../icons/icons'
+import { ShieldIcon } from '../icons/Icons'
 import './Header.css'
 
 interface HeaderProps {

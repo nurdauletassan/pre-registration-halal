@@ -1,6 +1,6 @@
 import type { FC } from 'react'
 import { Card } from '../ui/Card'
-import { CameraIcon, SparklesIcon, CheckCircleIcon } from '../icons/icons'
+import { CameraIcon, SparklesIcon, CheckCircleIcon } from '../icons/Icons'
 import './HowItWorks.css'
 
 export const HowItWorks: FC = () => {

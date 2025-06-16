@@ -1,6 +1,6 @@
 import type { FC } from 'react'
 import { Card } from '../ui/Card'
-import { GiftIcon, UsersIcon, SparklesIcon, StarIcon } from '../icons/icons'
+import { GiftIcon, UsersIcon, SparklesIcon, StarIcon } from '../icons/Icons'
 import './Benefits.css'
 
 export const Benefits: FC = () => {

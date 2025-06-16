@@ -1,6 +1,6 @@
 import type { FC } from 'react'
 import { Card } from '../ui/Card'
-import { MailIcon, ArrowRightIcon, ClockIcon, ShieldIcon, SparklesIcon } from '../icons/icons'
+import { MailIcon, ArrowRightIcon, ClockIcon, ShieldIcon, SparklesIcon } from '../icons/Icons'
 import './Waitlist.css'
 
 interface WaitlistProps {

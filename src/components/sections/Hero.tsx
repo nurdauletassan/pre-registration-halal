@@ -1,7 +1,7 @@
 import type { FC } from 'react'
 import { Badge } from '../ui/Badge'
 import { Button } from '../ui/Button'
-import { ArrowRightIcon, CheckCircleIcon, ZapIcon, ShieldIcon } from '../icons/icons'
+import { ArrowRightIcon, CheckCircleIcon, ZapIcon, ShieldIcon } from '../icons/Icons'
 import './Hero.css'
 
 interface HeroProps {
