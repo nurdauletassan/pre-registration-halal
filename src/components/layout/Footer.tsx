@@ -1,4 +1,4 @@
-import { ShieldIcon } from '../icons/Icons'
+import { ShieldIcon } from '../icons/icons'
 import './Footer.css'
 
 export const Footer = () => {
