@@ -1,6 +1,6 @@
 import type { FC } from 'react'
 import { Card } from '../ui/Card'
-import { MailIcon, ArrowRightIcon, ClockIcon, ShieldIcon, SparklesIcon } from '../icons/icons'
+import { MailIcon, ClockIcon, ShieldIcon, SparklesIcon } from '../icons/icons'
 import './Waitlist.css'
 import { useTranslation, Trans } from 'react-i18next'
 import { Button } from '../ui/Button'
