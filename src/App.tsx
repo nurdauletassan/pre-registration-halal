@@ -1,3 +1,4 @@
+import './i18n';
 import { useState } from 'react'
 import './App.css'
 import Header from './components/layout/Header'

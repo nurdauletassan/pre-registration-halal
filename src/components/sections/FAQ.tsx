@@ -1,45 +1,56 @@
 import type { FC } from 'react'
 import './FAQ.css'
+import { useTranslation, Trans } from 'react-i18next'
 
 const FAQ: FC = () => {
+  useTranslation()
+
   return (
     <section id="faq" className="faq">
       <div className="faq-container">
         <div className="faq-header">
-          <h2 className="faq-title">Frequently Asked Questions</h2>
-          <p className="faq-description">Everything you need to know about HalalCheck AI</p>
+          <h2 className="faq-title">
+            <Trans i18nKey="faq.title"/>
+          </h2>
+          <p className="faq-description">
+            <Trans i18nKey="faq.description"/>
+          </p>
         </div>
 
         <div className="faq-grid">
           <div className="faq-card">
-            <h3 className="faq-question">Do you check restaurants?</h3>
+            <h3 className="faq-question">
+              <Trans i18nKey="faq.questions.restaurants.question"/>
+            </h3>
             <p className="faq-answer">
-              No, we specialize exclusively in product verification. We analyze ingredients in packaged foods,
-              beverages, and consumer products - not restaurant meals or prepared foods.
+              <Trans i18nKey="faq.questions.restaurants.answer"/>
             </p>
           </div>
 
           <div className="faq-card">
-            <h3 className="faq-question">How accurate is the AI?</h3>
+            <h3 className="faq-question">
+              <Trans i18nKey="faq.questions.accuracy.question"/>
+            </h3>
             <p className="faq-answer">
-              Our AI achieves 99% accuracy by cross-referencing multiple halal certification databases and
-              continuously learning from expert reviews and user feedback.
+              <Trans i18nKey="faq.questions.accuracy.answer"/>
             </p>
           </div>
 
           <div className="faq-card">
-            <h3 className="faq-question">When will it be available?</h3>
+            <h3 className="faq-question">
+              <Trans i18nKey="faq.questions.availability.question"/>
+            </h3>
             <p className="faq-answer">
-              We're launching in Q2 2024. Early access users will get the app 30 days before the public release,
-              plus exclusive benefits.
+              <Trans i18nKey="faq.questions.availability.answer"/>
             </p>
           </div>
 
           <div className="faq-card">
-            <h3 className="faq-question">Is there a cost?</h3>
+            <h3 className="faq-question">
+              <Trans i18nKey="faq.questions.cost.question"/>
+            </h3>
             <p className="faq-answer">
-              Basic scanning is free forever. Premium features like detailed reports and bulk scanning require a
-              subscription, but early users get 50% off for life.
+              <Trans i18nKey="faq.questions.cost.answer"/>
             </p>
           </div>
         </div>

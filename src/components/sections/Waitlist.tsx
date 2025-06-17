@@ -2,12 +2,16 @@ import type { FC } from 'react'
 import { Card } from '../ui/Card'
 import { MailIcon, ArrowRightIcon, ClockIcon, ShieldIcon, SparklesIcon } from '../icons/icons'
 import './Waitlist.css'
+import { useTranslation, Trans } from 'react-i18next'
+import { Button } from '../ui/Button'
 
 interface WaitlistProps {
   onSubmit: (e: React.FormEvent) => void
 }
 
 export const Waitlist: FC<WaitlistProps> = ({ onSubmit }) => {
+  const { t } = useTranslation()
+
   return (
     <section id="register" className="waitlist">
       <div className="waitlist-overlay"></div>
@@ -17,9 +21,11 @@ export const Waitlist: FC<WaitlistProps> = ({ onSubmit }) => {
       <div className="waitlist-container">
         <div className="waitlist-content">
           <div className="waitlist-header">
-            <h2 className="waitlist-title">Join the Waitlist</h2>
+            <h2 className="waitlist-title">
+              <Trans i18nKey="waitlist.title"/>
+            </h2>
             <p className="waitlist-description">
-              Be among the first to experience AI-powered halal verification. Get notified when we launch!
+              <Trans i18nKey="waitlist.description"/>
             </p>
           </div>
 
@@ -32,40 +38,52 @@ export const Waitlist: FC<WaitlistProps> = ({ onSubmit }) => {
                     <input
                       type="email"
                       name="email"
-                      placeholder="Enter your email address"
+                      placeholder={t('waitlist.emailPlaceholder')}
                       className="waitlist-input"
                       required
                     />
                   </div>
-
-                  
                 </div>
-                <button type="submit" className="waitlist-button">
-                    Get Early Access
-                    <ArrowRightIcon className="waitlist-button-icon" />
-                  </button>
+                <Button type="submit" className="waitlist-button">
+                  <Trans i18nKey="waitlist.submit"/>
+                </Button>
 
                 <div className="waitlist-terms">
                   <p className="waitlist-terms-text">
-                    By signing up, you agree to our{" "}
-                    <a href="/terms" className="waitlist-link">Terms of Service</a>{" "}
-                    and{" "}
-                    <a href="/privacy" className="waitlist-link">Privacy Policy</a>
+                    <Trans
+                      i18nKey="waitlist.terms"
+                      components={{
+                        terms: <a href="/terms" className="text-emerald-600 hover:text-emerald-700" />,
+                        privacy: <a href="/privacy" className="text-emerald-600 hover:text-emerald-700" />
+                      }}
+                    />
                   </p>
                 </div>
 
                 <div className="waitlist-stats">
                   <div className="waitlist-stat">
-                    <div className="waitlist-stat-value">1000+</div>
-                    <div className="waitlist-stat-label">Early Users</div>
+                    <div className="waitlist-stat-value">
+                      <Trans i18nKey="waitlist.stats.users"/>
+                    </div>
+                    <div className="waitlist-stat-label">
+                      <Trans i18nKey="waitlist.stats.usersLabel"/>
+                    </div>
                   </div>
                   <div className="waitlist-stat">
-                    <div className="waitlist-stat-value">99%</div>
-                    <div className="waitlist-stat-label">Accuracy</div>
+                    <div className="waitlist-stat-value">
+                      <Trans i18nKey="waitlist.stats.accuracy"/>
+                    </div>
+                    <div className="waitlist-stat-label">
+                      <Trans i18nKey="waitlist.stats.accuracyLabel"/>
+                    </div>
                   </div>
                   <div className="waitlist-stat">
-                    <div className="waitlist-stat-value">24/7</div>
-                    <div className="waitlist-stat-label">Available</div>
+                    <div className="waitlist-stat-value">
+                      <Trans i18nKey="waitlist.stats.products"/>
+                    </div>
+                    <div className="waitlist-stat-label">
+                      <Trans i18nKey="waitlist.stats.productsLabel"/>
+                    </div>
                   </div>
                 </div>
               </form>
@@ -74,15 +92,21 @@ export const Waitlist: FC<WaitlistProps> = ({ onSubmit }) => {
             <div className="waitlist-features">
               <div className="waitlist-feature">
                 <ClockIcon className="waitlist-feature-icon" />
-                <p className="waitlist-feature-text">Launch in Q2 2024</p>
+                <p className="waitlist-feature-text">
+                  <Trans i18nKey="waitlist.features.launch"/>
+                </p>
               </div>
               <div className="waitlist-feature">
                 <ShieldIcon className="waitlist-feature-icon" />
-                <p className="waitlist-feature-text">100% Secure</p>
+                <p className="waitlist-feature-text">
+                  <Trans i18nKey="waitlist.features.secure"/>
+                </p>
               </div>
               <div className="waitlist-feature">
                 <SparklesIcon className="waitlist-feature-icon" />
-                <p className="waitlist-feature-text">No Spam Ever</p>
+                <p className="waitlist-feature-text">
+                  <Trans i18nKey="waitlist.features.noSpam"/>
+                </p>
               </div>
             </div>
           </div>

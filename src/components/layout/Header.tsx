@@ -1,12 +1,16 @@
-
+import React from 'react'
+import LanguageButton from '../ui/LanguageButton'
 import { ShieldIcon } from '../icons/icons'
 import './Header.css'
+import { useTranslation, Trans } from 'react-i18next'
 
 interface HeaderProps {
   scrollToSection: (sectionId: string) => void
 }
 
-const Header = ({ scrollToSection }: HeaderProps) => {
+const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
+  useTranslation()
+
   return (
     <header className="header">
       <div className="header-content">
@@ -18,21 +22,24 @@ const Header = ({ scrollToSection }: HeaderProps) => {
         </div>
         <nav className="nav-links">
           <button className="nav-link" onClick={() => scrollToSection('early-access')}>
-            Early Access
+            <Trans i18nKey="nav.earlyAccess"/>
           </button>
           <button className="nav-link" onClick={() => scrollToSection('how-it-works')}>
-            How It Works
+            <Trans i18nKey="nav.howItWorks"/>
           </button>
           <button className="nav-link" onClick={() => scrollToSection('benefits')}>
-            Benefits
+            <Trans i18nKey="nav.benefits"/>
           </button>
           <button className="nav-link" onClick={() => scrollToSection('register')}>
-            Join Waitlist
+            <Trans i18nKey="nav.waitlist"/>
           </button>
           <button className="nav-link" onClick={() => scrollToSection('faq')}>
-            FAQ
+            <Trans i18nKey="nav.faq"/>
           </button>
         </nav>
+        <div className="header-actions">
+          <LanguageButton />
+        </div>
       </div>
     </header>
   )

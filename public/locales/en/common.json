@@ -1,0 +1,103 @@
+{
+  "hero": {
+    "title": "AI-Powered <strong>Halal</strong> Product Verification",
+    "description": "Get early access to our AI-powered halal verification system. Scan products, get instant verification, and shop with confidence.",
+    "earlyAccess": "🚀 Coming Soon - Early Access Available",
+    "note": "✨ Join our exclusive early access program and be among the first to experience the future of halal verification",
+    "getAccess": "Get Early Access",
+    "stats": {
+      "accuracy": "99% Accuracy",
+      "instant": "Instant Results",
+      "trusted": "Trusted by 1000+"
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "description": "Three simple steps to verify any product's halal status",
+    "steps": {
+      "scan": {
+        "title": "Scan Product",
+        "description": "Take a photo of the ingredient list or enter them manually"
+      },
+      "analyze": {
+        "title": "AI Analysis",
+        "description": "Our AI analyzes ingredients against halal certification databases"
+      },
+      "verify": {
+        "title": "Get Results",
+        "description": "Receive instant verification with detailed ingredient analysis"
+      }
+    }
+  },
+  "benefits": {
+    "title": "Early Access Benefits",
+    "description": "Join our exclusive early access program and enjoy special privileges",
+    "features": {
+      "free": {
+        "title": "3 Months Free",
+        "description": "Enjoy full access to all features for 3 months"
+      },
+      "support": {
+        "title": "Priority Support",
+        "description": "Get dedicated support from our team"
+      },
+      "beta": {
+        "title": "Beta Features",
+        "description": "Be the first to try new features"
+      },
+      "discount": {
+        "title": "50% Lifetime Discount",
+        "description": "Special pricing for early access members"
+      }
+    }
+  },
+  "waitlist": {
+    "title": "Join the Waitlist",
+    "description": "Be among the first to experience AI-powered halal verification",
+    "emailPlaceholder": "Enter your email",
+    "submit": "Get Early Access",
+    "terms": "By joining, you agree to our <terms>Terms of Service</terms> and <privacy>Privacy Policy</privacy>",
+    "features": {
+      "launch": "Launch in July 2025",
+      "secure": "100% Secure",
+      "noSpam": "No Spam Ever"
+    },
+    "stats": {
+      "users": "1000+",
+      "usersLabel": "Early Access Members",
+      "accuracy": "99%",
+      "accuracyLabel": "Verification Accuracy",
+      "products": "10,000+",
+      "productsLabel": "Products Verified"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Everything you need to know about HalalCheck AI",
+    "questions": {
+      "restaurants": {
+        "question": "Do you check restaurants?",
+        "answer": "No, we specialize exclusively in product verification. We analyze ingredients in packaged foods, beverages, and consumer products - not restaurant meals or prepared foods."
+      },
+      "accuracy": {
+        "question": "How accurate is the AI?",
+        "answer": "Our AI achieves 99% accuracy by cross-referencing multiple halal certification databases and continuously learning from expert reviews and user feedback."
+      },
+      "availability": {
+        "question": "When will it be available?",
+        "answer": "We're launching in July 2025. Early access users will get the app 30 days before the public release, plus exclusive benefits."
+      },
+      "cost": {
+        "question": "Is there a cost?",
+        "answer": "Basic scanning is free forever. Premium features like detailed reports and bulk scanning require a subscription, but early users get 50% off for life."
+      }
+    }
+  },
+  "nav": {
+    "earlyAccess": "Early Access",
+    "howItWorks": "How It Works",
+    "benefits": "Benefits",
+    "waitlist": "Join Waitlist",
+    "faq": "FAQ"
+  }
+} 
