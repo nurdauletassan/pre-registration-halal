@@ -7,9 +7,11 @@ import { Button } from '../ui/Button'
 
 interface WaitlistProps {
   onSubmit: (e: React.FormEvent) => void
+  email: string
+  setEmail: (value: string) => void
 }
 
-export const Waitlist: FC<WaitlistProps> = ({ onSubmit }) => {
+export const Waitlist: FC<WaitlistProps> = ({ onSubmit, email, setEmail }) => {
   const { t } = useTranslation()
 
   return (
@@ -22,10 +24,10 @@ export const Waitlist: FC<WaitlistProps> = ({ onSubmit }) => {
         <div className="waitlist-content">
           <div className="waitlist-header">
             <h2 className="waitlist-title">
-              <Trans i18nKey="waitlist.title"/>
+              <Trans i18nKey="waitlist.title" />
             </h2>
             <p className="waitlist-description">
-              <Trans i18nKey="waitlist.description"/>
+              <Trans i18nKey="waitlist.description" />
             </p>
           </div>
 
@@ -38,14 +40,17 @@ export const Waitlist: FC<WaitlistProps> = ({ onSubmit }) => {
                     <input
                       type="email"
                       name="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       placeholder={t('waitlist.emailPlaceholder')}
                       className="waitlist-input"
                       required
                     />
                   </div>
                 </div>
+
                 <Button type="submit" className="waitlist-button">
-                  <Trans i18nKey="waitlist.submit"/>
+                  <Trans i18nKey="waitlist.submit" />
                 </Button>
 
                 <div className="waitlist-terms">
@@ -53,8 +58,18 @@ export const Waitlist: FC<WaitlistProps> = ({ onSubmit }) => {
                     <Trans
                       i18nKey="waitlist.terms"
                       components={{
-                        terms: <a href="/terms" className="text-emerald-600 hover:text-emerald-700" />,
-                        privacy: <a href="/privacy" className="text-emerald-600 hover:text-emerald-700" />
+                        terms: (
+                          <a
+                            href="/terms"
+                            className="text-emerald-600 hover:underline cursor-pointer transition"
+                          />
+                        ),
+                        privacy: (
+                          <a
+                            href="/privacy"
+                            className="text-emerald-600 hover:underline cursor-pointer transition"
+                          />
+                        )
                       }}
                     />
                   </p>
@@ -63,26 +78,26 @@ export const Waitlist: FC<WaitlistProps> = ({ onSubmit }) => {
                 <div className="waitlist-stats">
                   <div className="waitlist-stat">
                     <div className="waitlist-stat-value">
-                      <Trans i18nKey="waitlist.stats.users"/>
+                      <Trans i18nKey="waitlist.stats.users" />
                     </div>
                     <div className="waitlist-stat-label">
-                      <Trans i18nKey="waitlist.stats.usersLabel"/>
+                      <Trans i18nKey="waitlist.stats.usersLabel" />
                     </div>
                   </div>
                   <div className="waitlist-stat">
                     <div className="waitlist-stat-value">
-                      <Trans i18nKey="waitlist.stats.accuracy"/>
+                      <Trans i18nKey="waitlist.stats.accuracy" />
                     </div>
                     <div className="waitlist-stat-label">
-                      <Trans i18nKey="waitlist.stats.accuracyLabel"/>
+                      <Trans i18nKey="waitlist.stats.accuracyLabel" />
                     </div>
                   </div>
                   <div className="waitlist-stat">
                     <div className="waitlist-stat-value">
-                      <Trans i18nKey="waitlist.stats.products"/>
+                      <Trans i18nKey="waitlist.stats.products" />
                     </div>
                     <div className="waitlist-stat-label">
-                      <Trans i18nKey="waitlist.stats.productsLabel"/>
+                      <Trans i18nKey="waitlist.stats.productsLabel" />
                     </div>
                   </div>
                 </div>
@@ -93,19 +108,19 @@ export const Waitlist: FC<WaitlistProps> = ({ onSubmit }) => {
               <div className="waitlist-feature">
                 <ClockIcon className="waitlist-feature-icon" />
                 <p className="waitlist-feature-text">
-                  <Trans i18nKey="waitlist.features.launch"/>
+                  <Trans i18nKey="waitlist.features.launch" />
                 </p>
               </div>
               <div className="waitlist-feature">
                 <ShieldIcon className="waitlist-feature-icon" />
                 <p className="waitlist-feature-text">
-                  <Trans i18nKey="waitlist.features.secure"/>
+                  <Trans i18nKey="waitlist.features.secure" />
                 </p>
               </div>
               <div className="waitlist-feature">
                 <SparklesIcon className="waitlist-feature-icon" />
                 <p className="waitlist-feature-text">
-                  <Trans i18nKey="waitlist.features.noSpam"/>
+                  <Trans i18nKey="waitlist.features.noSpam" />
                 </p>
               </div>
             </div>
@@ -114,4 +129,4 @@ export const Waitlist: FC<WaitlistProps> = ({ onSubmit }) => {
       </div>
     </section>
   )
-} 
+}

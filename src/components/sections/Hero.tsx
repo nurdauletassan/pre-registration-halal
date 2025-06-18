@@ -30,7 +30,7 @@ export const Hero: FC<HeroProps> = ({ scrollToSection }) => {
         </h1>
         <p className="hero-description">
           <Trans i18nKey="hero.description"/>
-          </p>
+        </p>
         <div className="hero-note">
             <Trans i18nKey="hero.note"/>
         </div>
